@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Se agrego un favicon.ico en la raiz del proyecto para que tenga un icono por defecto-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,17 @@
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
-
+<!-- Por cada input se coloco una etiqueta label-->
   <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+    <label for="name">Nombre</label> 
+    <input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    <label for="age">Edad</label>     
+    <input type="number" name="age" id="age">
     <br />
 
-    Nacionalidad
+    
+    <label for="nationality">Nacionalidad</label>   
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
@@ -26,11 +30,11 @@
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
-    <input type="submit">
+    <input class="submit" type="submit">
   </form>
 
   <div>
-    <h2>Lista de invitados</h2>
+    <h2>Lista de invitados</h2> 
 
   </div>
 
